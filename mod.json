@@ -8,7 +8,14 @@
 	},
 	"id": "geming400.hide_practice_labels",
 	"name": "Hide practice labels",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"developer": "Geming400",
-	"description": "Will hide the 'X' and 'Z' practice labels"
+	"description": "Will hide the 'X' and 'Z' practice labels",
+	"settings": {
+		"toggled": {
+			"name": "Toggled",
+			"type": "bool",
+			"default": true
+		}
+	}
 }

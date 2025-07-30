@@ -7,7 +7,7 @@ class $modify(MyPlayLayer, PlayLayer) {
     void togglePracticeMode(bool practiceMode) {
         PlayLayer::togglePracticeMode(practiceMode);
 
-        if (practiceMode) {
+        if (practiceMode && Mod::get()->getSettingValue<bool>("toggled")) {
             auto checkpointMenu = static_cast<CCMenu*>(m_uiLayer->getChildByID("checkpoint-menu"));
             checkpointMenu->setVisible(false);
 
